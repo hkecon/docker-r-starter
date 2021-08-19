@@ -1,5 +1,5 @@
-mran.date <- "2020-04-28"
-options(repos=paste0("https://cran.microsoft.com/snapshot/",mran.date,"/"))
+# mran.date <- "2021-08-19"
+# options(repos=paste0("https://cran.microsoft.com/snapshot/",mran.date,"/"))
 
 pkgTest <- function(x,try=FALSE)
 {
@@ -16,7 +16,7 @@ pkgTest <- function(x,try=FALSE)
 }
 
 
-global.libraries <- c("abind","coda")
+global.libraries <- c("remote","rmarkdown")
 
 results <- sapply(as.list(global.libraries), pkgTest)
 
